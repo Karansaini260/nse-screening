@@ -1,0 +1,92 @@
+# ---- Python ----
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+*.egg-info/
+.eggs/
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# ---- Virtual environments ----
+.venv/
+venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# ---- IDE / Editor ----
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# ---- Project artefacts ----
+
+# PyInstaller build output
+build/
+dist/
+*.spec.bak
+
+# Trained ML model (regenerated on first run)
+signal_model.pkl
+*.pkl
+
+# Trade log (regenerated on first run)
+trade_log.csv
+*.csv
+
+# Application logs
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Sensitive — never commit credentials
+.env
+*.env
+secrets.*
+*.key
+*.pem
+
+# Local build outputs
+*.exe
+NSE_Screener*.zip
+submission/*.zip
+uploads/
+
+# Coverage / test outputs
+.coverage
+htmlcov/
+.pytest_cache/
+.tox/
+.nox/
+.cache
+.pyright/
+
+# Build artefacts specific to this project
+*.7z
+*.tar.gz
+*.zip

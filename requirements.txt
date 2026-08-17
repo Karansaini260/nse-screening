@@ -1,0 +1,32 @@
+# NSE Screening — runtime dependencies
+# Pinned to tested-compatible versions. Bump carefully and re-test.
+
+# Core GUI — built into Python's stdlib (tkinter + ttk).
+# No install needed on most Python distributions; on Linux you may
+# need `sudo apt install python3-tk`.
+
+# Data + numerics
+numpy>=1.21,<2.0
+pandas>=1.3,<3.0
+
+# ML
+scikit-learn>=1.0,<2.0
+joblib>=1.0
+
+# Charts
+matplotlib>=3.5
+
+# ------------------------------------------------------------------
+# Live feed (Angel One SmartAPI). OPTIONAL — the app runs in mock
+# mode without these. Only required if your clients use the
+# "Connect to Angel One" button.
+# ------------------------------------------------------------------
+# Uncomment the next three lines if you ship the live feed build.
+# smartapi-python>=1.4
+# websocket-client>=1.2
+# logzero>=1.7
+
+# ------------------------------------------------------------------
+# Packaging (NOT a runtime dep — only needed to build the .exe)
+# ------------------------------------------------------------------
+# pip install pyinstaller>=5.13
